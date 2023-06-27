@@ -15,7 +15,11 @@
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     
     <div id="my-app">
-               
+        <ul class="mail-list" v-if="mailList.length >= numberOfMails">
+            <li class="mail" v-for="mail in mailList" >
+                {{ mail }}
+            </li>
+        </ul>    
     </div>
 
 
